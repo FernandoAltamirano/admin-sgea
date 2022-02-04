@@ -1,0 +1,62 @@
+.request {
+  padding: 1em;
+  padding-bottom: 0.5em;
+  border: 1px solid rgb(216, 216, 216);
+  border-radius: 15px;
+  width: 250px;
+  transition: 250ms all;
+}
+.request:hover {
+  opacity: 0.6;
+}
+
+.request > span {
+  color: rgb(170, 170, 170);
+  font-size: 0.8em;
+  font-weight: bold;
+}
+
+.request > h2 {
+  font-size: 1em;
+  margin: 0.5em 0 1.2em 0;
+}
+
+.request .request__date {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 1em 0;
+  font-size: 0.8em;
+}
+.request .request__date svg {
+  margin-right: 10px;
+}
+
+.request .request__state {
+  padding: 5px;
+  border-radius: 2px;
+  font-size: 14px;
+  text-align: right;
+  font-weight: bold;
+  margin-top: 30px;
+}
+.accepted {
+  color: rgb(71, 124, 238) !important;
+}
+
+.rejected {
+  color: rgb(211, 51, 51) !important;
+}
+
+.pending {
+  color: rgb(240, 240, 38) !important;
+}
+
+.adm_option {
+  display: flex;
+}
+.adm_option p {
+  margin-left: 10px;
+  font-size: 14px;
+  font-weight: bold;
+}

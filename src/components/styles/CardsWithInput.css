@@ -1,0 +1,83 @@
+.inputWithIcon {
+  border: 1px solid rgb(216, 216, 216);
+  margin: 8px 0;
+  padding: 8px;
+  transition: 0.3s;
+  border-radius: 9999px;
+  max-width: 500px;
+  color: #666;
+  display: flex;
+  align-items: center;
+}
+.input_text {
+  width: 90%;
+  outline: none;
+  border: none;
+  background-color: transparent;
+}
+
+.inputWithIcon .input_text {
+  padding-left: 40px;
+}
+
+.events_container .selectOptions_container {
+  margin-top: 2em;
+  margin-bottom: 0;
+}
+
+input[type="range"],
+input[type="range"]::-webkit-slider-runnable-track,
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+input[type="range"]::-webkit-slider-thumb {
+  background-color: var(--black);
+}
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"]::-moz-range-thumb,
+input[type="range"]::-ms-thumb {
+  background-color: var(--black);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.filters {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-top: 2em;
+  margin-bottom: 2em;
+}
+
+.cardsevent_container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 3em;
+  align-items: center;
+  flex-wrap: wrap;
+  min-height: 200px;
+  margin-top: 30px;
+}
+
+@media (min-width: 768px) {
+  .home main {
+    padding-left: 8em;
+    padding-right: 8em;
+  }
+
+  .cardsevent_container {
+    justify-content: flex-start;
+  }
+  .selectOptions_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .inputWithIcon {
+    flex: 0.7;
+  }
+  .filters {
+    gap: 2em;
+  }
+}

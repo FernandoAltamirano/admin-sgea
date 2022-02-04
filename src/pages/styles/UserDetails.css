@@ -1,0 +1,191 @@
+.Perfil-Container {
+  display: flex;
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  /* padding: 1em 4em;
+  border-radius: 20px;
+  background-color: white;
+  box-shadow: -1px 5px 13px -7px rgba(186, 186, 186, 1); */
+}
+
+.ContainerForm {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1000px;
+}
+
+.ContainerFormLeft {
+  /* text-align: center; */
+}
+.ContainerFormLeft .container_btn {
+  width: 100%;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+.ContainerFormRight {
+  width: 100%;
+  margin: 0 auto;
+  margin-top: 1em;
+  max-width: 500px;
+}
+
+.Image-User {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #dfdfdf;
+  border-radius: 999999px;
+  color: gray;
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  margin-bottom: 1em;
+  position: relative;
+  background-color: black;
+}
+
+.Image-User img {
+  width: 101%;
+  height: 101%;
+  border-radius: 99999px;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 400ms all;
+}
+
+.user-icon {
+  width: 60%;
+  height: 60%;
+}
+
+.ContainerFormLeft__button,
+.Perfil-Container .btn_remove {
+  border: none;
+  margin: 20px auto;
+  display: block;
+  width: 60%;
+  border-radius: 2px;
+  color: var(--black);
+  border: 1px solid var(--black);
+  padding: 6px 16px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 450ms all ease;
+}
+.Perfil-Container .btn_remove {
+  border: none;
+  color: white;
+  background-color: red;
+  width: 60%;
+}
+.ContainerFormLeft__button:active,
+.ContainerForm__header__button:active {
+  transform: scale(0.9);
+  transition: all 0.5s;
+}
+
+.ContainerFormLeft__button:hover {
+  color: white;
+  background-color: var(--black);
+}
+
+.ContainerFormRight__label {
+  width: 100%;
+  display: inline-block;
+  font-size: 0.9em;
+  margin-bottom: 0.5rem;
+}
+
+.ContainerFormRight__label input,
+.ContainerFormRight__label select {
+  width: 100%;
+  padding: 6px 10px;
+  margin-bottom: 1rem;
+  margin-top: 5px;
+}
+.ContainerFormRight__label input:disabled {
+  background-color: rgb(245, 245, 245);
+}
+
+.ContainerForm__header {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid rgb(228, 228, 228);
+  margin-bottom: 2em;
+  padding-bottom: 0.5em;
+}
+.Subtitle--modify {
+  font-size: 20px;
+}
+
+.pencil-icon {
+  width: 30px;
+  color: #11101d;
+}
+
+.save_profile {
+  padding: 5px 15px;
+  width: auto;
+  display: flex;
+  align-items: center;
+  background-color: var(--green);
+  border-radius: 9999px;
+  margin: 5px;
+  margin-top: 20px;
+}
+.save_profile span {
+  margin-right: 5px;
+}
+
+.Image-User:hover > img {
+  opacity: 0.6;
+}
+.Image-User:hover > .iconToChangePhoto {
+  display: block;
+}
+.iconToChangePhoto {
+  display: none;
+  position: absolute;
+  background-color: transparent;
+  border-radius: 9999px;
+  cursor: pointer;
+}
+
+@media (min-width: 1024px) {
+  .ContainerForm {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 5em;
+    margin-bottom: 3em;
+  }
+  .ContainerFormLeft {
+    flex: 0.5;
+    margin-top: 1em;
+  }
+  .Image-User {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 2em;
+  }
+  .ContainerFormRight {
+    flex: 0.5;
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .ContainerForm__header {
+    flex-direction: row;
+    align-items: center;
+  }
+  .ContainerForm .row {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2em;
+  }
+}

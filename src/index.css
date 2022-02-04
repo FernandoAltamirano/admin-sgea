@@ -1,13 +1,209 @@
-body {
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap");
+:root {
+  --black: #11101d;
+  --white2: rgb(248, 249, 252);
+  --green: rgb(90, 214, 90);
+  --blue: rgb(45, 45, 214);
+  --red: rgb(221, 52, 52);
+  --pink: rgb(224, 19, 122);
+}
+* {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+body::-webkit-scrollbar-thumb {
+  background-color: var(--black);
+}
+body::-webkit-scrollbar {
+  background-color: white;
+  width: 8px;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+main {
+  margin: 50px auto;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+button {
+  width: 100%;
+  cursor: pointer;
+  outline: none;
+  font-family: "Open Sans", sans-serif;
+  transition: 450ms all;
+  font-weight: 600;
+  border: none;
+  color: white;
+  letter-spacing: 1px;
+  background-color: transparent;
+}
+
+button:hover {
+  opacity: 0.5;
+}
+
+.disable {
+  cursor: default;
+  opacity: 0.5;
+}
+
+.generalerrormessage {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: bold;
+  color: red;
+  font-size: 14px;
+  border: 1px solid red;
+  padding: 0.5em 1em;
+  border-radius: 9999px;
+}
+
+.hidden {
+  width: 0px;
+  display: none;
+}
+
+.ContainerButtons {
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  margin-right: 2.5em;
+  gap: 2em;
+}
+
+.ContainerForm__button {
+  width: 45%;
+  margin-bottom: 2em;
+  padding: 0.5rem;
+  color: white;
+  font-weight: bold;
+  border: none;
+  border-radius: 9999px;
+  margin-top: 1em;
+}
+
+.ContainerForm__button:active {
+  transform: scale(0.9);
+  transition: all 0.5s;
+}
+
+.btn_confirmation {
+  background-color: var(--black);
+  color: white;
+  border-radius: 9999px;
+  padding: 5px;
+}
+
+.ContainerForm__button {
+  background-color: var(--green);
+}
+
+.Path {
+  color: black;
+  margin-bottom: 1rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  padding-left: 1rem;
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: var(--black);
+}
+
+input,
+select,
+textarea {
+  border: none;
+  outline: none;
+  border: 1px solid rgb(216, 216, 216);
+  padding: 5px 15px;
+  border-radius: 9999px;
+}
+
+.btn_session {
+  border-radius: 99999px;
+  padding: 0.8em 1em;
+  border: 1px solid var(--green);
+  background-color: var(--green);
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.eye_icon {
+  margin-left: 250px;
+}
+
+textarea {
+  border-radius: 2px;
+}
+
+@media (min-width: 600px) {
+  .container_radius {
+    padding: 1em 4em;
+    border-radius: 20px;
+    background-color: white !important;
+    box-shadow: -1px 5px 13px -7px rgba(186, 186, 186, 1);
+  }
+}
+
+/* Modal  */
+.modal {
+  width: 100vw;
+  height: 100%;
+  margin: 0 auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  z-index: 999;
+}
+
+.modal > div {
+  padding: 2em 3em;
+  max-width: 400px;
+  text-align: center;
+  margin: 0 1em;
+  background-color: white;
+  border-radius: 20px;
+  box-shadow: -1px 5px 13px -7px rgba(186, 186, 186, 1);
+}
+
+.btn_cancel {
+  border: 1px solid red;
+  color: red;
+  border-radius: 999px;
+  padding: 5px;
+}
+
+.overflow {
+  overflow: hidden;
+}
+
+.title_modal {
+  padding-bottom: 0.3em;
+  margin-bottom: 1em;
+  border-bottom: 1px solid var(--white2);
+}
+
+.button_disabled {
+  cursor: initial;
+  opacity: 0.5;
+}
+
+.container_details {
+  background-color: transparent;
 }

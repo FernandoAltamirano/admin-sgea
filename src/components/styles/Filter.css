@@ -1,0 +1,77 @@
+.filter {
+  width: 200px;
+  margin: 0 auto;
+}
+
+.filter button {
+  border-radius: 2px;
+  padding: 10px;
+}
+.filter .label_info {
+  color: gray;
+  font-size: 14px;
+  text-align: center;
+}
+
+.filter .btn_filters {
+  color: var(--black);
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border: 1px solid var(--black);
+}
+.filter button p {
+  margin-left: 10px;
+  font-size: 16px;
+}
+
+.filter .container_btn_filter {
+  text-align: center;
+}
+.filter .container_btn_filter button {
+  padding: 5px;
+  background-color: var(--black);
+  width: 100px;
+}
+
+.title_filter {
+  color: var(--black);
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.input_range_container {
+  height: 50px;
+  margin-top: 50px;
+}
+
+.dropdown_filter {
+  position: relative;
+}
+
+.dropdown_filter > div {
+  position: absolute;
+  background-color: white;
+  z-index: 9999;
+  width: 400px;
+  margin-top: 10px;
+  padding: 0.5em 2em 1em 2em;
+  border: 1px solid var(--black);
+}
+
+.input_category_container {
+  margin: 1em 0;
+}
+.input_category_container label {
+  margin: 5px 0;
+  display: block;
+}
+
+.filter_by_price {
+  padding-bottom: 0.5em;
+  border-bottom: 1px solid var(--black);
+}
+
+.filter_by_category {
+  padding-top: 0.5em;
+}

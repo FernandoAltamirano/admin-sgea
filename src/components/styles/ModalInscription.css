@@ -1,0 +1,39 @@
+.modal_inscription input[type="text"] {
+  display: block;
+  width: 100%;
+  margin-bottom: 20px;
+  margin-top: 10px;
+}
+.inscription_certificate select {
+  display: block;
+  margin: 10px auto 0 auto;
+}
+
+.voucher_container {
+  margin: 20px auto 0 auto;
+}
+.voucher_container span {
+  font-size: 12px;
+  color: gray;
+}
+
+.voucher {
+  border: none;
+}
+.inscriptionform_container {
+  margin-bottom: 20px;
+}
+
+.inscription_update {
+  text-align: right;
+  margin: 10px 0;
+  padding-bottom: 5px;
+  border-bottom: 1px solid var(--black);
+}
+.inscription_update a {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  color: var(--black);
+}

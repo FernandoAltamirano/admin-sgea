@@ -1,0 +1,128 @@
+.register {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+}
+
+.register__image {
+  /* width: 60vw; */
+  flex: 0.3;
+  height: 100vh;
+  display: none;
+}
+
+.register__image img {
+  width: 100%;
+  object-fit: cover;
+  height: 100%;
+}
+
+.register__right {
+  height: 100vh;
+  flex: 0.7;
+  margin: auto;
+  width: 80%;
+  padding-top: 3em;
+}
+
+.register__logo {
+  min-height: 100px;
+  text-align: right;
+  min-width: 300px;
+  margin-top: 2em;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.register__form {
+  display: flex;
+  min-width: 400px;
+  max-width: 700px;
+  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  color: var(--black);
+}
+.register__form form {
+  width: 100%;
+}
+
+.register__form h1 {
+  margin-bottom: 0.5em;
+}
+
+.register__form .register__inputwrapper > div {
+  padding: 0.8em 1em;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 9999px;
+  width: 100%;
+  margin: 1em 0;
+  border: 1px solid rgb(216, 216, 216);
+  background-color: var(--white2);
+}
+
+.register__inputwrapper input {
+  border: none;
+  font-size: 14px;
+  outline: none;
+  background-color: transparent;
+  color: var(--black);
+  font-size: 14px;
+  font-family: "Open Sans", sans-serif;
+}
+
+/* .register__inputwrapper .password svg {
+  margin-left: 0;
+} */
+/* .register__inputwrapper .password svg:last-child {
+  margin-left: 120px;
+} */
+
+.register__form input::placeholder {
+  font-size: 14px;
+}
+
+.register__signin {
+  text-align: center;
+  margin-top: 20px;
+}
+.register__signin a {
+  text-align: center;
+  font-size: 14px;
+  color: var(--black);
+  text-decoration: none;
+  padding-bottom: 2em;
+}
+
+@media (min-width: 1024px) {
+  .register__image {
+    flex: 0.3;
+    display: initial;
+  }
+
+  .register__row {
+    display: flex;
+    justify-content: space-between;
+  }
+  .register__row > div {
+    width: 49%;
+  }
+
+  .btn_session {
+    margin-top: 2em;
+  }
+  .eye_icon {
+    margin-left: 70px;
+  }
+}
+
+.messageerror {
+  color: red;
+  font-size: 12px;
+  font-weight: bold;
+  padding-left: 10px;
+}

@@ -1,0 +1,26 @@
+.request_title {
+  margin: 1em 0 2em 0.5em;
+  text-align: center;
+  font-size: 1.5em;
+}
+
+.request_element {
+  margin-bottom: 1.4em;
+  text-align: left;
+}
+
+.request_element h4 {
+  padding-bottom: 0.2em;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.request_element p {
+  color: gray;
+  font-size: 14px;
+  margin-left: 0.4em;
+}
+
+.main_content .left {
+  flex: 0.5;
+}

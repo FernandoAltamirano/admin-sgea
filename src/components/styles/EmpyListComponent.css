@@ -1,0 +1,21 @@
+.emptylist {
+  width: 100%;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.header_emptylist {
+  text-align: center;
+}
+.header_emptylist h3 {
+  margin-top: 5px;
+}
+
+.emptylist a {
+  color: var(--black);
+  margin-top: 20px;
+  text-decoration: underline;
+}

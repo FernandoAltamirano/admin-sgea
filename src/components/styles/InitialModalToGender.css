@@ -1,0 +1,65 @@
+.modal_gender > div {
+  height: 400px;
+  width: 80%;
+  max-width: 600px;
+}
+.modal_gender > div > div {
+  margin-top: 40px;
+}
+
+.modal_gender h2 {
+  margin-top: 10px;
+  border-bottom: 1px solid var(--white2);
+  padding-bottom: 0.5em;
+}
+.modal_gender label {
+  display: block;
+  width: 80%;
+  margin: 1em auto;
+  padding: 5px 15px;
+  border-radius: 2px;
+  font-weight: bold;
+  font-size: 1.3em;
+  transition: 250ms all;
+  border: 1px solid transparent;
+}
+
+#male + label {
+  border-color: var(--blue);
+  color: var(--blue);
+  cursor: pointer;
+}
+#male:checked + label {
+  border-color: var(--blue);
+  background-color: var(--blue);
+  color: white;
+}
+
+#female + label {
+  border-color: var(--pink);
+  color: var(--pink);
+  cursor: pointer;
+}
+#female:checked + label {
+  border-color: var(--pink);
+  background-color: var(--pink);
+  color: white;
+}
+
+#other + label {
+  border-color: var(--black);
+  color: var(--black);
+  cursor: pointer;
+}
+#other:checked + label {
+  border-color: var(--black);
+  background-color: var(--black);
+  color: white;
+}
+
+.modal_gender .container_btn {
+  margin: 2em auto 0 auto;
+}
+.modal_gender button {
+  color: var(--black);
+}

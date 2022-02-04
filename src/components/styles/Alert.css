@@ -1,0 +1,16 @@
+.alert .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2em;
+  margin-top: 2em;
+}
+.alert button {
+  padding: 0.5em 1em;
+  border-radius: 999px;
+}
+
+.alert .message {
+  font-weight: bold;
+  font-size: 18px;
+}

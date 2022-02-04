@@ -1,0 +1,82 @@
+.nav_container {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #11101d;
+  padding: 0 2em;
+  margin: 0 auto;
+}
+
+.link_home {
+  height: 40px;
+  cursor: pointer;
+}
+
+.nav_links {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav_links .usernameactive,
+.nav_links .usernameactive a {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.nav_links .usernameactive .icon {
+  width: 30px;
+  height: 30px;
+}
+
+.usernameactive a .icon {
+  margin-right: 20px;
+}
+
+.logo_img {
+  height: 50px;
+}
+
+.btn_link {
+  text-decoration: none;
+  color: var(--black);
+  font-weight: bold;
+  background: var(--green);
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: all 450ms;
+  color: white;
+  border-radius: 9999px;
+}
+
+.image-profile {
+  width: 35px;
+  height: 35px;
+  object-fit: cover;
+  border-radius: 9999px;
+}
+.btn_link:hover {
+  opacity: 0.5;
+}
+
+.btn_dashboard {
+  color: white;
+}
+
+.nav_container .username {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .nav_container {
+    padding-left: 8em;
+    padding-right: 8em;
+  }
+  .nav_container .username {
+    display: block;
+    margin: 0 2em 0 0.5em;
+  }
+}
